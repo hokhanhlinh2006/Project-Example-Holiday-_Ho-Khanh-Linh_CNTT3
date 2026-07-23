@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  --accent-gradient: linear-gradient(135deg, #f12711 0%, #f5af19 100%);
+  --dark-bg: #0b111e;
+  --panel-bg: rgba(255, 255, 255, 0.08);
+  --panel-border: rgba(255, 255, 255, 0.12);
+  --font-family: 'Outfit', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(225, 228, 232, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.1);
+}
+
+/* Dark Accent Header */
+.header-hero {
+  background: var(--primary-gradient);
+  color: white;
+  padding: 80px 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* Auth Pages Design */
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #edf2f7 0%, #d5e0ea 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand-gradient {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.btn-primary-gradient {
+  background: var(--primary-gradient);
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-gradient:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.btn-accent-gradient {
+  background: var(--accent-gradient);
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-accent-gradient:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* Badge styling */
+.badge-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
